@@ -1,0 +1,21 @@
+import herencia.*;
+import java.util.java;
+
+import java.util.Date;
+public class TestHerencia {
+    public static void main(String[] args) {
+        
+//Crea empleados 
+ Empleado empleado1 = new Empeado("Alex",  3000);
+ System.out.println(empleado1);
+ Empleado empleado2 = new Empleado("Reol",  4000);
+ System.out.println(empleado2);
+ Empleado empleado3 = new Empleado("Juan",  5000);
+ System.out.println(empleado3);
+        
+//Crea Clientes 
+ var fecha = new Date(); //Obtener la fecha de hoy 
+ Cliente cliente1 = new Cliente(fecha, true, "Suny", 'F', 18,"Santo tomas");
+ System.out.println(cliente1);        
+    }
+}
