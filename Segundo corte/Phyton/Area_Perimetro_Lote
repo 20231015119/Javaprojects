@@ -1,7 +1,7 @@
 class Lote:
     pi= 3.14
 
-    def _init_(self,diametro):
+    def __init__(self,diametro):
         self.radio= diametro/2
 
     def area (self):
