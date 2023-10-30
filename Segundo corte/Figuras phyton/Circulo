@@ -10,6 +10,6 @@ class Circulo:
     def perimetro (self):
         return self.pi *  2* self.radio
 
-mediaCirculo= Lote(20)
+mediaCirculo= Circulo(20)
 print("El area del Circulo es:",mediaCirculo.area())
 print("El perimetro del Circulo es:",mediaCirculo.perimetro())
