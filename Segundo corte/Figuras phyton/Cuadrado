@@ -1,0 +1,24 @@
+package cuadrado;
+
+
+public class Cuadrado {
+    
+ public double lado;
+    
+public Cuadrado(double lado){
+        this.lado =  lado;
+}
+    public double area(){
+        return lado*lado;
+    }
+ public double perimetro (){
+     return lado*4;
+    }
+
+    public static void main(String[] args ) {
+     Cuadrado MediaCuadrado= new  Cuadrado(5);
+     System.out.println("El area de Cuadrado es:"+MediaCuadrado.area());
+     System.out.println("El perimetro del Cuadrado es:"+MediaCuadrado.perimetro());
+    }
+    
+}
