@@ -1,0 +1,25 @@
+class TrianguloRectangulo:
+    def __init__(self, cateto_a, cateto_b):
+        self.cateto_a = cateto_a
+        self.cateto_b = cateto_b
+
+    def calcular_hipotenusa(self):
+        return (self.cateto_a**2 + self.cateto_b**2)**0.5
+
+    def calcular_area(self):
+        return (self.cateto_a * self.cateto_b) / 2
+
+    def calcular_perimetro(self):
+        hipotenusa = self.calcular_hipotenusa()
+        return self.cateto_a + self.cateto_b + hipotenusa
+
+cateto_a = 3.0
+cateto_b = 4.0
+
+triangulo = TrianguloRectangulo(cateto_a, cateto_b)
+
+area = triangulo.calcular_area()
+perimetro = triangulo.calcular_perimetro()
+
+print("Área del triángulo rectángulo:", area)
+print("Perímetro del triángulo rectángulo:", perimetro)
