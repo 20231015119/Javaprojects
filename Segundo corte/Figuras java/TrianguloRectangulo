@@ -1,0 +1,46 @@
+package triangulorectangulo;
+
+/**
+ *
+ * @author david
+ */
+public class TrianguloRectangulo {
+
+    private double catetoA;
+    private double catetoB;
+
+    public TrianguloRectangulo(double catetoA, double catetoB) {
+        this.catetoA = catetoA;
+        this.catetoB = catetoB;
+    }
+
+    public double calcularHipotenusa() {
+        return Math.sqrt(catetoA * catetoA + catetoB * catetoB);
+    }
+
+    public double calcularArea() {
+        return (catetoA * catetoB) / 2;
+    }
+
+    public double calcularPerimetro() {
+        double hipotenusa = calcularHipotenusa();
+        return catetoA + catetoB + hipotenusa;
+    }
+
+    public static void main(String[] args) {
+        
+        double catetoA = 3.0;
+        double catetoB = 4.0;
+
+       
+        TrianguloRectangulo MediaTriangulo = new TrianguloRectangulo(catetoA, catetoB);
+
+       
+        double area = MediaTriangulo.calcularArea();
+        double perimetro = MediaTriangulo.calcularPerimetro();
+
+        // Imprime el área y el perímetro
+        System.out.println("El area del triangulo rectangulo es: " + area);
+        System.out.println("El perimetro del triangulo rectangulo es: " + perimetro);
+    }
+}
