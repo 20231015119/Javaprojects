@@ -1,0 +1,29 @@
+package circulo;
+
+/**
+ *
+ * @author david
+ */
+public class Circulo {
+
+    double pi = 3.14;
+    double radio;
+
+    public Circulo(double diametro) {
+        this.radio = diametro / 2;
+    }
+
+    public double area() {
+        return pi * radio * radio;
+    }
+
+    public double perimetro() {
+        return pi * 2 * radio;
+    }
+
+    public static void main(String[] args) {
+        Circulo MediaCirculo = new Circulo(20);
+        System.out.println("El area del Circulo es: " +  MediaCirculo.area());
+        System.out.println("El perimetro del Circulo es: " +  MediaCirculo.perimetro());
+    }
+}
